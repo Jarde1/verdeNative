@@ -1,0 +1,152 @@
+/* styles.css */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /*font-size: 1em;*/
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('img/corpo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(144, 238, 144, 0.8); /* Verde claro com transparência */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    margin: 0;
+    color: #008000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    /*color: #fff;*/
+    color: #008000;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Branco com transparência */
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.content-wrapper h1 {
+    color: #5a5;
+    text-align: center;
+}
+
+article {
+    flex: 3;
+    padding-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 10px; /* Controla a posição fixa do sidebar */
+}
+
+aside h3 {
+    color: #5a5;
+    margin-top: 0;
+}
+
+.ad {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.ad-in-article {
+    background-color: #e8f5e9;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #a5d6a7;
+}
+
+/*main h2 {
+    color: #5a5;
+    text-align: center;
+}
+*/
+main .article-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.8); /* Cinza escuro com transparência */
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+/* Media query para esconder o aside em dispositivos móveis */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
+
+    article {
+        padding-right: 0;
+    }
+    header .logo {
+        display: none;
+    }
+}
