@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Verde Native</title>
+    <meta name="description" content="Dicas de saúde, bem-estar, suplementos, dietas e yoga. Conteúdos sobre vida saudável, nutrição e práticas para melhorar sua qualidade de vida." />
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../styles1.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo2.png" alt="Logo Saúde e Vida Natural" class="logo">
+        <h1>Verde Native</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <article>
+
+                <h2> .. </h2>
+                <p> ... </p>
+               
+                <p><b>Referências</b>:</p>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+
+            </article>
+            <aside class="sticky-sidebar">
+                <h3>Anúncios</h3>
+                <div class="ad">
+                    <p>Espaço para Anúncio 1</p>
+                </div>
+                <div class="ad">
+                    <p>Espaço para Anúncio 2</p>
+                </div>
+                <div class="ad">
+                    <p>Espaço para Anúncio 3</p>
+                </div>
+            </aside>
+        </div>
+         <!-- Paginação -->
+        <nav class="pagination">
+            <a href="../index.html">&lt;</a> <!-- Página anterior -->
+            <a href="../index.html">1</a>
+            <a href="index2.html" class="active">2</a>
+            <a href="index3.html">3</a>
+            <a href="index3.html">&gt;</a> <!-- Próxima página -->
+        </nav>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saúde e Vida Natural. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Lazy loading para imagens
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = document.querySelectorAll("img.article-image");
+            lazyImages.forEach(img => {
+                img.setAttribute("loading", "lazy");
+            });
+        });
+    </script>
+</body>
+</html>
